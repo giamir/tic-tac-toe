@@ -4,7 +4,7 @@ import Square from './Square';
 
 describe('<Square />', () => {
     it('renders a "x" sign', () => {
-        const { getByText } = render(<Square />);
+        const { getByText } = render(<Square value="x" />);
         expect(getByText('x')).toBeInTheDocument();
     });
 });

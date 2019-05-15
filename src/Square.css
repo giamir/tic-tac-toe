@@ -4,11 +4,24 @@
     float: left;
     font-size: 24px;
     font-weight: bold;
-    line-height: 34px;
-    height: 34px;
+    line-height: 44px;
+    height: 44px;
     margin-right: -1px;
     margin-top: -1px;
     padding: 0;
     text-align: center;
-    width: 34px;
+    width: 44px;
+}
+
+.Square:hover {
+    cursor: pointer;
+}
+
+.Square:disabled {
+    cursor: default;
+    color: black;
+}
+
+.Square:focus {
+    outline:0;
 }

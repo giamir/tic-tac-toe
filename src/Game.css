@@ -1,3 +1,13 @@
 .Game {
   margin: 20px;
 }
+
+.Game > button {
+  background: white;
+  border: 1px solid #999;
+  padding: 1em;
+}
+
+.Game > button:hover {
+  cursor: pointer;
+}
