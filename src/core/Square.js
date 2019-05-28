@@ -37,5 +37,4 @@ Square.defaultProps = {
   label: ''
 }
 
-
 export default Square;

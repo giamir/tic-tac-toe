@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import calculateWinner from "./gameEngine";
-import Board from "./Board";
+import calculateWinner from "./core/gameEngine";
+import Board from "./core/Board";
 import './Game.css';
+import { Link } from "react-router-dom"
 
 const PLAYERS = [ 'o', 'x' ];
 const noop = () => {};
@@ -34,15 +35,17 @@ function Game() {
   }
 
   return (
-    <main className="Game">
-      <h1>Tic Tac Toe</h1>
-      <Board
-        squares={squares}
-        onClick={winner ? noop : onClickHandler}
-      />
-      {renderInfo()}
-      <button onClick={resetGame}>Restart the game</button>
-    </main>
+    <>
+      <div className="Game">
+        <Board
+          squares={squares}
+          onClick={winner ? noop : onClickHandler}
+        />
+        {renderInfo()}
+        <button onClick={resetGame}>Restart the game</button>
+      </div>
+      <Link to="/about">About</Link>
+    </>
   );
 }
 
